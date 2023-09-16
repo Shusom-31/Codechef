@@ -1,0 +1,33 @@
+#include<stdio.h>
+int main()
+{
+    int t;
+    {
+     scanf("%d",&t);
+    }
+    for (int i = 0; i < t; i++)
+    {
+           int x,y,z;
+           
+             scanf("%d %d %d",&x,&y,&z);
+           int a=x*y;
+           int b=x*z;
+           int d=y*z;
+          
+       if (a%z==0)
+       {
+           printf("%d %d\n",a,z);
+       }
+       else if(b%y==0){
+        printf("%d %d\n",b,y);
+       }else if(d%x==0)
+       {
+        printf("%d %d\n" ,d,x);
+       }else{
+        printf("-1\n");
+       }
+        
+           }     
+    return 0;
+}
+
